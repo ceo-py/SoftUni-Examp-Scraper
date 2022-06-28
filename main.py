@@ -8,8 +8,8 @@ options = Options()
 options.headless = False
 PATH = r"D:\PyCharm\amazon items\chromedriver.exe"
 url = "https://judge.softuni.org/Contests/Compete/Results/Simple/3477"
-user_name = "mljam"
-password = "123456yU"
+user_name = "234324"
+password = "34344"
 driver = webdriver.Chrome(PATH, options=options)
 driver.get(url)
 
@@ -37,20 +37,7 @@ def get_info_from_web():
 
 
 get_info_from_web()
-# print(examp_info)
-# print(len(examp_info['total_score']))
-#
-# first_task = '/html/body/div[2]/div/table/thead/tr/th[4]'
-# last_tank = '/html/body/div[2]/div/table/thead/tr/th[18]'
-#
-# first_contest_first_task = '/html/body/div[2]/div/table/tbody/tr[1]/td[4]'
-# first_contest_last_task = '/html/body/div[2]/div/table/tbody/tr[1]/td[18]'
-# first_contest_total_score = '/html/body/div[2]/div/table/tbody/tr[1]/td[19]'
-#
-# second_contest_first_task = '/html/body/div[2]/div/table/tbody/tr[2]/td[4]'
-# second_contest_last_task = '/html/body/div[2]/div/table/tbody/tr[2]/td[18]'
-# second_contest_total_score = '/html/body/div[2]/div/table/tbody/tr[2]/td[19]'
-#
+
 
 def write_json(data, filename="examp_info.json"):
     with open(filename, "w", encoding='utf-8') as x:

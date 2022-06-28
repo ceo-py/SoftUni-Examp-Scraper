@@ -14,30 +14,21 @@ def task_frequency(data_info):
 
 
 students_info = {"6.00": 0,
-                 "5.50+": 0,
-                 "5.00": 0,
-                 "4.50+": 0,
-                 "4.00": 0,
-                 "3.50+": 0,
-                 "3.00": 0,
+                 "5.00+": 0,
+                 "4.00+": 0,
+                 "3.00+": 0,
                  "2.00": 0,
                  "Not attempt any task": 0}
 
 for score in sorted(data_info['total_score']):
     if score == 600:
         students_info["6.00"] += 1
-    elif score >= 550:
-        students_info["5.50+"] += 1
-    elif score == 500:
-        students_info["5.00"] += 1
-    elif score >= 450:
-        students_info["4.50+"] += 1
-    elif score == 400:
-        students_info["4.00"] += 1
-    elif score >= 350:
-        students_info["3.50+"] += 1
-    elif score == 300:
-        students_info["3.00"] += 1
+    elif score >= 500:
+        students_info["5.00+"] += 1
+    elif score >= 400:
+        students_info["4.00+"] += 1
+    elif score >= 300:
+        students_info["3.00+"] += 1
     elif score == 0:
         students_info["Not attempt any task"] += 1
     elif score < 300:
@@ -49,5 +40,7 @@ print("\nContestants Scores :\n")
 for score, number_people in students_info.items():
     print(f"{score} - {number_people} / {total_contestants}, {((number_people / total_contestants) * 100):.2f}%")
 
+
+print(f"\n{((sum(list(students_info.values())[:4])/ total_contestants)*100):.2f}% passed the test, Congrats !!!")
 task_frequency(data_info)
 

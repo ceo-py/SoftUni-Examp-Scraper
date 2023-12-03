@@ -4,8 +4,8 @@ A little web scraper that will collect exams information and give you the info i
 
 Examples:
 
-![alt text](https://cdn.discordapp.com/attachments/983670671647313930/1011181392325001287/unknown.png)
+![alt text](https://github.com/ceo-py/Project-Pictures/blob/main/SoftUni-Examp-Scraper/pie_example.png?raw=true)
 
-![alt text](https://cdn.discordapp.com/attachments/983670671647313930/1011181553294004224/unknown.png)
+![alt text](https://github.com/ceo-py/Project-Pictures/blob/main/SoftUni-Examp-Scraper/contestants_example.png?raw=true)
 
-![alt text](https://cdn.discordapp.com/attachments/983670671647313930/1011183183573815316/unknown.png)
+![alt text](https://github.com/ceo-py/Project-Pictures/blob/main/SoftUni-Examp-Scraper/average_score_example.png?raw=true)
